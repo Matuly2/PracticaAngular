@@ -1,0 +1,6 @@
+<nav class='barra-nav'>
+  <a *ngFor="let link of links" [href]="link.url" class="nav-link">
+    <img [src]="link.imagen" [alt]="link.texto" />
+    <span>{{link.texto}}</span>
+  </a>
+</nav>

@@ -1,0 +1,19 @@
+<div class="contenedor-perfil">
+  <img [src]="imagenGrande" alt="Imagen grande" class="imagen-grande" />
+  <img [src]="imagenRedonda" alt="Imagen redonda" class="imagen-redonda" />
+  <h1>{{nombre}}</h1>
+  <h2>{{'@' + nick}}</h2>
+  <p>{{descripcion}}</p>
+  <div class="fila">
+    <p><i class="fas fa-map-marker-alt"></i> {{ubicacion}}</p>
+    <p><i class="fas fa-link"></i> <a [href]="enlace" target="_blank" rel="noopener noreferrer">{{enlace}}</a></p>
+  </div>
+  <div class="fila">
+    <p><i class="fas fa-birthday-cake"></i> Fecha de nacimiento: {{fechaNacimiento}}</p>
+    <p><i class="fas fa-calendar-alt"></i> Se unió en {{fechaUnion}}</p>
+  </div>
+  <div class="fila">
+    <p>{{siguiendo}} Siguiendo</p>
+    <p>{{seguidores}} Seguidores</p>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="App">
+    <app-nav></app-nav>
+    <app-perfil 
+      [nombre]="'Hasbulla'" 
+      [nick]="'hasbulla'" 
+      [descripcion]="'Soy el puto amo'" 
+      [ubicacion]="'Dagestan, Rusia'" 
+      [enlace]="'https://www.instagram.com/hasbulla.magomedov/'" 
+      [fechaNacimiento]="'30/07/2003'" 
+      [fechaUnion]="'01/01/2017'" 
+      [siguiendo]="33" 
+      [seguidores]="90000000" 
+      [imagenGrande]="'../../assets/img/hasbullaEncabezado.jpg'"
+      [imagenRedonda]="'../../assets/img/hasbullaAvatar.jpg'" >
+      
+    </app-perfil>
+    <section class="twitterFollowCard">
+  
+    <p>A Quién Seguir</p>
+    <app-twitter-follow-card [formatUserName]="format" [initialIsFollowing]="true" userName="TheBigBossPutin">
+        Vladimir Putin
+    </app-twitter-follow-card>
+  
+    <app-twitter-follow-card [formatUserName]="format" [initialIsFollowing]="false" userName="zelenskyyUa">
+        Volodimir Zelenski
+    </app-twitter-follow-card>
+    <h2>Tendencias</h2>
+    <app-tendencia [numero]="1"  nombre="#Rusia" posts="20 mil"></app-tendencia>
+    <app-tendencia [numero]="2"  nombre="#Ucrania" posts="65 mil"></app-tendencia>
+    <app-tendencia [numero]="3"nombre="#Bombas" posts="20 mil"></app-tendencia>
+    <app-tendencia [numero]="4" nombre="#Horror" posts="10 mil"></app-tendencia>
+  </section>
+  </div>

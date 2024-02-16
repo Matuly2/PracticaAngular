@@ -1,0 +1,15 @@
+<article class="tw-followCard">
+    <header class="tw-followCard-header">
+      <img class="tw-followCard-avatar" [src]="'https://unavatar.io/twitter/' + userName" alt="avatar">
+      <div class="tw-followCard-info">
+        <strong>{{children}}</strong>
+        <span class="tw-followCard-infoUserName">{{formatUserName(userName)}}</span>
+      </div>
+    </header>
+    <aside>
+      <button [class]="buttonClassName" (click)="handleClick()">
+        <span class="tw-followCard-text">{{text}}</span>
+        <span class="tw-followCard-stopFollow">Dejar de Seguir</span>
+      </button>
+    </aside>
+  </article>

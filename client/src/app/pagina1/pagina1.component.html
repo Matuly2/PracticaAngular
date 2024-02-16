@@ -1,0 +1,33 @@
+<div class="App">
+    <app-nav></app-nav>
+    <app-perfil 
+      [nombre]="'Arnold Schwarzenegger'" 
+      [nick]="'terminator'" 
+      [descripcion]="'He Derrotado a Skynet'" 
+      [ubicacion]="'Los Angeles, CA'" 
+      [enlace]="'https://www.imdb.com/name/nm0000216/'" 
+      [fechaNacimiento]="'30/07/1947'" 
+      [fechaUnion]="'01/01/2010'" 
+      [siguiendo]="10" 
+      [seguidores]="1000000" 
+      [imagenGrande]="'../../assets/img/perfil-largo.webp'"
+      [imagenRedonda]="'../../assets/img/perfil-corto.jpg'" >
+      
+    </app-perfil>
+    <section class="twitterFollowCard">
+  
+    <p>A Quién Seguir</p>
+    <app-twitter-follow-card [formatUserName]="format" [initialIsFollowing]="true" userName="sanchezcastejon">
+      Pedro Sánchez
+    </app-twitter-follow-card>
+  
+    <app-twitter-follow-card [formatUserName]="format" [initialIsFollowing]="false" userName="marianorajoy">
+      Mariano Rajoy
+    </app-twitter-follow-card>
+    <h2>Tendencias</h2>
+    <app-tendencia [numero]="1" nombre="#RealMadrid" posts="50 mil"></app-tendencia>
+    <app-tendencia [numero]="2" nombre="#BarcelonaFC" posts="45 mil"></app-tendencia>
+    <app-tendencia [numero]="3" nombre="#CancerInvestigacion" posts="30 mil"></app-tendencia>
+    <app-tendencia [numero]="4" nombre="#AtleticoMadrid" posts="40 mil"></app-tendencia>
+  </section>
+  </div>
